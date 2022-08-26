@@ -1,0 +1,125 @@
+// background-color: rgba(248, 240, 252, 1);
+// color: #be4bdb;
+
+.mantine-UnstyledButton-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Apple Color Emoji;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  background-color: transparent;
+  text-align: left;
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  color: #000;
+}
+
+.mantine-Group-root {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.mantine-ThemeIcon-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  border-radius: 4px;
+  background-color: rgba(248, 240, 252, 1);
+  color: #be4bdb;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.mantine-Text-root {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+svg.icon.icon-tabler.icon-tabler-messages {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+  stroke: currentcolor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mantine-ThemeIcon-root:nth-child(1) {
+  background-color: rgba(231, 245, 255, 1);
+  color: #228be6;
+}
+
+.mantine-ThemeIcon-root:nth-child(2) {
+  background-color: rgba(230, 252, 245, 1);
+  color: #12b886;
+}
+.mantine-ThemeIcon-root:nth-child(2) {
+  background-color: rgba(243, 240, 255, 1);
+  color: #7950f2;
+}
+.mantine-ThemeIcon-root:nth-child(3) {
+  background-color: rgba(248, 240, 252, 1);
+  color: #be4bdb;
+}

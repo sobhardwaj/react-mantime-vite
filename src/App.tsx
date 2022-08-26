@@ -1,34 +1,72 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import {
+  BrowserRouter,
+  Router,
+  Route,
+  Link,
+  Routes,
+  Outlet,
+} from "react-router-dom";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import "@glideapps/glide-data-grid/dist/index.css";
+import Connection from "./compoents/database/connection";
+import Settings from "./compoents/database/settings";
+import Dashboard from "./compoents/dashboard/dashboard";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="root-app">
+      <div className="App">
+        <h1>Vite + React</h1>
+        <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+        </div>
+        <div className="card">
+          <nav>
+            
+        </nav>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      {/* <nav>
+        <ul>
+          <li>
+            <Link to={"/"}> Home </Link>
+          </li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
+          <li>
+            <Link to={"/about"}>About</Link>
+          </li>
+          <li>
+            <Link to={"/services"}>Services</Link>
+          </li>
+        </ul>
+      </nav> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="newConnection" element={<Connection />} />
+          <Route path=":ConnectionId" element={<Settings />} />
+          <Route path="settings" element={<Settings />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: "1rem" }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
