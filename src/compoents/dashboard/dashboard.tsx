@@ -10,7 +10,7 @@ function Dashboard() {
       <AppShell
         padding="md"
         navbar={
-          <Navbar width={{ base: 300 }} height={500} p="xs">
+          <Navbar width={{ base: 300 }} height={"100vh"} p="xs">
             {/* Navbar content */}
             <button
               className="mantine-UnstyledButton-root mantine-1fexinv"
